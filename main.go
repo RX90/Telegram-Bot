@@ -19,7 +19,7 @@ func main() {
 			log.Printf(`Message: "%s" User: "%s" Chat: "%s"`, update.Message.Text, update.Message.From.UserName, update.Message.Chat.Title)
 			switch update.Message.Command() {
 				case "start":
-					text := fmt.Sprintf("Привет, *%s*🤫😲👻\nМожешь посмотреть мои команды:\n/start - Запуск бота👾\n/relax - Кнопка спокойствия✨\n/gopher - Коллекция гоферов", update.Message.From.FirstName)
+					text := fmt.Sprintf("Привет, *%s*🤗😲\nМожешь посмотреть мои команды:\n/start - Запуск бота👾\n/relax - Кнопка спокойствия✨\n/gopher - Случайный гофер🐿️", update.Message.From.FirstName)
 					sendMessage(bot, update.Message.Chat.ID, text)
 				case "relax":
 					sendInlineKeyboard(bot, update.Message.Chat.ID, "Нажми на кнопку спокойствия✨")
