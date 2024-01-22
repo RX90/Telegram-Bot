@@ -9,7 +9,7 @@ var (
 		tgbotapi.NewInlineKeyboardRow(
 		tgbotapi.NewInlineKeyboardButtonData("+1 к спокойствию😌", "relax_button",
 	)))
-	mediaSlice = []string{"media/gofriends.png", "media/gobuilder.png", "media/gobuilder2.png", "media/goclassic.jpg", "media/gogalaxy.png", "media/gomusic.png", "media/goroutines.jpg", "media/goru.png", "media/gotravel.png"}
+	mediaSlice = []string{"media/gofriends.png", "media/gobuilder.png", "media/gobuilder2.png", "media/goclassic.jpg", "media/gogalaxy.png", "media/gomusic.png", "media/goroutines.jpg", "media/goru.png", "media/gotravel.png", "media/gogc.png", "media/gostone.png"}
 	mediaMap = map[string]string{
 		"media/gofriends.png": "Гофер со своими лучшими друзьями🤝",
 		"media/gobuilder.png": "Гофер что-то мастерит🔨",
@@ -20,5 +20,7 @@ var (
 		"media/goroutines.jpg": "Гофер, показывающий силу горутин💪",
 		"media/goru.png": "Русский гофер🎻",
 		"media/gotravel.png": "Гофер-путешественник🗺️",
+		"media/gogc.png": "Гофер-сборщик мусора",
+		"media/gostone.png": "Гофер-каменщик",
 	} 
 )
