@@ -1,4 +1,4 @@
-module tgbot
+module tgbo
 
 go 1.21.3
 
