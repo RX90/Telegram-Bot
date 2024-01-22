@@ -1,8 +1,9 @@
 package main
 
 import (
+	"crypto/rand"
 	"log"
-	"math/rand"
+	"math/big"
 	"os"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
@@ -24,7 +25,8 @@ func sendMessage(bot *tgbotapi.BotAPI, chatID int64, text string) {
 }
 
 func sendGopher(bot *tgbotapi.BotAPI, chatID int64) {
-	filePath := mediaSlice[rand.Intn(len(mediaSlice))]
+	n, _ := rand.Int(rand.Reader, big.NewInt(int64(len(mediaSlice))))
+	filePath := mediaSlice[n.Int64()]
 	text := mediaMap[filePath]
 	msg := tgbotapi.NewPhoto(chatID, tgbotapi.FilePath(filePath))
 	msg.Caption = text
