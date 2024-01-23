@@ -13,7 +13,6 @@ func main() {
 	updConfig := tgbotapi.NewUpdate(0)
 	updConfig.Timeout = 60
 	updates := bot.GetUpdatesChan(updConfig)
-	// TODO: добавить больше гоферов, добавить возможность отправлять гиф с гофером, придумать новые функции для бота
 	for update := range updates {
 		if update.Message != nil && update.Message.IsCommand() {
 			log.Printf(`Message: "%s" User: "%s" Chat: "%s"`, update.Message.Text, update.Message.From.UserName, update.Message.Chat.Title)
