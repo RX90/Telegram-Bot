@@ -9,7 +9,22 @@ var (
 		tgbotapi.NewInlineKeyboardRow(
 		tgbotapi.NewInlineKeyboardButtonData("+1 к спокойствию😌", "relax_button",
 	)))
-	mediaSlice = []string{"media/gofriends.png", "media/gobuilder.png", "media/gobuilder2.png", "media/goclassic.jpg", "media/gogalaxy.png", "media/gomusic.png", "media/goroutines.jpg", "media/goru.png", "media/gotravel.png", "media/gogc.png", "media/gostone.png", "media/gowalf.gif"}
+	mediaSlice = []string{
+		"media/gofriends.png", 
+		"media/gobuilder.png", 
+		"media/gobuilder2.png",
+		"media/goclassic.jpg", 
+		"media/gogalaxy.png", 
+		"media/gomusic.png",
+		"media/goroutines.jpg",
+		"media/goru.png",
+		"media/gotravel.png",
+		"media/gogc.png",
+		"media/gowalk.gif",
+		"media/goaristocrat.jpg",
+		"media/gofamily.jpg",
+		"media/gowizard.jpg",
+	}
 	mediaMap = map[string]string{
 		"media/gofriends.png": "Гофер со своими лучшими друзьями🤝",
 		"media/gobuilder.png": "Гофер что-то мастерит🔨",
@@ -21,7 +36,9 @@ var (
 		"media/goru.png": "Русский гофер",
 		"media/gotravel.png": "Гофер-путешественник🗺️",
 		"media/gogc.png": "Гофер-сборщик мусора🚛",
-		"media/gostone.png": "Гофер-каменщик",
-		"media/gowalf.gif": "Гофер гуляет",
+		"media/gowalk.gif": "",
+		"media/goaristocrat.jpg": "Аристократичный гофер🎩🍸",
+		"media/gofamily.jpg": "Семья гоферов👨‍👩‍👧‍👦",
+		"media/gowizard.jpg": "Волшебник-гофер🧙‍♂️",
 	} 
 )
