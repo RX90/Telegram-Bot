@@ -28,9 +28,15 @@ func sendGopher(bot *tgbotapi.BotAPI, chatID int64) {
 	n, _ := rand.Int(rand.Reader, big.NewInt(int64(len(mediaSlice))))
 	filePath := mediaSlice[n.Int64()]
 	text := mediaMap[filePath]
-	msg := tgbotapi.NewPhoto(chatID, tgbotapi.FilePath(filePath))
-	msg.Caption = text
-	bot.Send(msg)
+	if filePath[len(filePath)-1] == 'f' {
+		msg := tgbotapi.NewAnimation(chatID, tgbotapi.FilePath(filePath))
+		msg.Caption = text
+		bot.Send(msg)
+	} else {
+		msg := tgbotapi.NewPhoto(chatID, tgbotapi.FilePath(filePath))
+		msg.Caption = text
+		bot.Send(msg)
+	}
 }
 
 func sendInlineKeyboard(bot *tgbotapi.BotAPI, chatID int64, text string) {
