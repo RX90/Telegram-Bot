@@ -24,7 +24,7 @@ var (
 		"media/goaristocrat.jpg",
 		"media/gofamily.jpg",
 		"media/gowizard.jpg",
-	}
+	
 	mediaMap = map[string]string{
 		"media/gofriends.png": "Гофер со своими лучшими друзьями🤝",
 		"media/gobuilder.png": "Гофер что-то мастерит🔨",
